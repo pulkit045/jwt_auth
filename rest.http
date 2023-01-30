@@ -1,0 +1,31 @@
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzUwODgwOTQsImV4cCI6MTY3NTA4ODEwOSwiYXVkIjoiNjNkN2QwNzlkMDA1Y2JmN2E3NmZiNjEyIiwiaXNzIjoiaHR0cHM6Ly9wdWxraXQwNDUuZ2l0aHViLmlvL1BvcnRmb2xpby1XZWJzaXRlLyJ9.bUqVOEsszQ-psJ7ivFow7WgRJZrG4bTEVjm8gCqlzxg
+
+### Login Route
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "shivam2@gmail.com",
+    "password": "shivam"
+}
+
+### Register Route
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email": "shivam2@gmail.com",
+    "password": "shivam"
+}
+
+# ### Refresh token Route
+# POST http://localhost:3000/auth/refresh-token
+# Content-Type: application/json
+
+# {
+#     "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzUwOTg0NTgsImV4cCI6MTcwNjY1NjA1OCwiYXVkIjoiNjNkN2Y4ZjgwM2ZiZDYzN2I2MDYwOThmIiwiaXNzIjoiaHR0cHM6Ly9wdWxraXQwNDUuZ2l0aHViLmlvL1BvcnRmb2xpby1XZWJzaXRlLyJ9.5R8at2ZRBFBTT4RphIky9Z8m6AOgz0peBLGAAKPrP1I"
+# }
+
+# ### Logout Route
+# DELETE http://localhost:3000/auth/logout
